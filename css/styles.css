@@ -1,0 +1,157 @@
+html{
+  overflow-y:scroll;
+}
+
+body{
+  font-family:sans-serif;
+  background: #3babf1;
+}
+.photo{
+  margin-top:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.main{
+  margin:30px auto;
+  width:300px;
+  background: white;
+  box-shadow: 2px 2px 30px #333;
+}
+.tabs{
+  list-style:none;
+  overflow:hidden;
+  width:100%;
+  height:50px;
+  margin:0;
+  padding:0;    
+}
+.tabs:hover {
+ cursor:pointer;
+}
+
+.tabs li{
+   width: calc(1/3 * 100%);
+   float:left;
+   padding:10px;
+   color: white;
+   text-align:center;
+   height:40px;
+}
+.tabs li:nth-child(1) {
+  float: left;
+}
+.tabs li:nth-child(3) {
+  float: right;
+}
+#all {
+  background: rgba(0, 70, 200, .4);
+}
+#offline {
+  background: rgba(0, 70, 200, .4);
+}
+#online {
+  background: rgba(0, 70, 200, .4);
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  border-right: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#all.active,
+#offline.active,
+#online.active {
+  background: rgba(0,70,200,.7);
+  border-bottom: 4px solid #FF80AB;
+}
+.searchbar {
+  width:100%;
+  position:relative;
+  height:25px;
+}
+#search{
+  width:200px;
+  border:none;
+  margin-bottom:20px;
+  border-bottom: 1px solid #ddd;
+  padding-left:25px;
+  margin-left:15%;
+}
+#search:focus {
+	outline: none;  
+}
+.fa-search {
+	position: absolute;
+  float:left;
+  top:4px;
+  left:15%;
+  opacity:0.7;	
+}
+.bar {
+	width: 251px;
+	height: 3px;
+	background: #FF80AB;
+	position: relative;
+	bottom: 21px; 
+	left: 24px;
+	transform: scaleX(0);
+	transition: transform 0.5s ease-in-out;
+}
+#search:focus + .bar {
+	transform: scaleX(1);
+}
+#users {
+  list-style-type: none;
+  padding: 0;
+}
+#users div{
+  margin-left:10px; 
+  margin-bottom:5px;
+  border-bottom: 1px solid #ddd;
+  padding-left:5px;
+}
+#users div:hover {
+  background: rgba(50, 120, 240, .1);
+  border-radius: 15px;
+  border-right: 5px solid #FF80AB;
+  transition: border-right .35s ease;
+}
+#users img {
+  width: 50px;
+  border-radius: 50%;
+  margin: 1em 1em 1em 0;
+}
+.topic {
+  margin-left:60px;
+  width: 70%;
+  color: #3babf1;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "…";
+}
+a {
+  color: #de4415;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: #de4415;
+}
+li {
+  position: relative;
+}
+.status {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+.glyphicon-ok{
+  color:green;
+}
+.copyright{
+  color:#6441A5;
+  text-align:center;
+  font-size:20px;
+  font-weight:600;
+}
